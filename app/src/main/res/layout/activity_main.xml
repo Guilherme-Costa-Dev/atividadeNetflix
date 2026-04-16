@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/capaInterestellar"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="327dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/interestelar_capa"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="43dp"
+        android:layout_height="60dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/guideLineVertical1"
+        app:layout_constraintTop_toTopOf="@+id/guideLine3"
+        app:srcCompat="@drawable/logo_netflix" />
+
+    <TextView
+        android:id="@+id/txtMinhaLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minha Lista"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/txtFilmes"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVertical2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtFilmes"
+        app:layout_constraintTop_toTopOf="@+id/txtFilmes" />
+
+    <TextView
+        android:id="@+id/txtFilmes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filmes"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSerie"
+        app:layout_constraintEnd_toStartOf="@+id/txtMinhaLista"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtSerie"
+        app:layout_constraintTop_toTopOf="@+id/txtSerie"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtSerie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Séries"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+        app:layout_constraintEnd_toStartOf="@+id/txtFilmes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgLogo"
+        app:layout_constraintTop_toTopOf="@+id/imgLogo"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideLine2"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="-70dp"
+        app:srcCompat="@drawable/interstellar_logo" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.03"
+        android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <TextView
+        android:id="@+id/txtFiccao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:text="Fiçao"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/txtEspaco"
+        app:layout_constraintEnd_toStartOf="@+id/txtEspaco"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideLineVertical1"
+        app:layout_constraintTop_toTopOf="@+id/txtEspaco" />
+
+    <TextView
+        android:id="@+id/txtEspaco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:text="Espaço"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/txtSuspense"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtFiccao"
+        app:layout_constraintTop_toTopOf="@+id/guideLine1" />
+
+    <TextView
+        android:id="@+id/txtSuspense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:text="Suspense"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/txtEspaco"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVertical2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtEspaco"
+        app:layout_constraintTop_toTopOf="@+id/txtEspaco" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineVertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92"/>
+
+    <Button
+        android:id="@+id/btnAssistir"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:text="Assistir"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/capaInterestellar"
+        app:layout_constraintEnd_toStartOf="@+id/btnDetalhes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMinhaLista"
+        app:layout_constraintTop_toBottomOf="@id/txtEspaco" />
+
+    <Button
+        android:id="@+id/btnMinhaLista"
+        android:layout_width="116dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="MINHA LISTA"
+        android:textSize="8sp"
+        app:iconGravity="top"
+        app:iconSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAssistir"
+        app:layout_constraintEnd_toStartOf="@+id/btnAssistir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guideLineVertical1"
+        app:layout_constraintTop_toTopOf="@+id/btnAssistir" />
+
+    <Button
+        android:id="@+id/btnDetalhes"
+        android:layout_width="116dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="DETALHES"
+        android:textSize="8sp"
+        app:iconGravity="top"
+        app:iconSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAssistir"
+        app:layout_constraintEnd_toEndOf="@id/guideLineVertical2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAssistir"
+        app:layout_constraintTop_toTopOf="@+id/btnAssistir" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalMeio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <TextView
+        android:id="@+id/txtFicaoCientifica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ficçao Cientifica"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/guideLineVertical1"
+        app:layout_constraintTop_toBottomOf="@+id/btnAssistir" />
+
+    <ImageView
+        android:id="@+id/capaDuna"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/capaAlien"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@id/guideLineVertical1"
+        app:layout_constraintTop_toBottomOf="@id/txtFicaoCientifica"
+        app:srcCompat="@drawable/duna_capa" />
+
+
+    <ImageView
+        android:id="@+id/capaAlien"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/capaDuna"
+        app:layout_constraintEnd_toStartOf="@+id/capaBackFuture"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/capaDuna"
+        app:layout_constraintTop_toTopOf="@+id/capaDuna"
+        app:srcCompat="@drawable/alienisolation_capa" />
+
+    <ImageView
+        android:id="@+id/capaBackFuture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/capaAlien"
+        app:layout_constraintEnd_toStartOf="@id/guideLineVertical2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/capaAlien"
+        app:layout_constraintTop_toTopOf="@+id/capaAlien"
+        app:srcCompat="@drawable/devoltaprofuturo_capa" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guilherme Cordeiro Costa"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideLineVertical2"
+        app:layout_constraintStart_toStartOf="@+id/guideLineVertical1"
+        app:layout_constraintTop_toBottomOf="@+id/capaAlien" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

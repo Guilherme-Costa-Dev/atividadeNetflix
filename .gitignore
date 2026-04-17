@@ -1,20 +1,15 @@
+*.iml
 .gradle/
-
-/build/
-/app/build/
+.idea/
+.kotlin/
 
 local.properties
+.DS_Store
 
-.idea/
-*.iml
-
-/captures/
+build/
+app/build/
+captures/
 
 .externalNativeBuild/
 .cxx/
-
-*.log
-
-.DS_Store
-Thumbs.db
 
